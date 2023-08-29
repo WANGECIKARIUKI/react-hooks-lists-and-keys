@@ -8,6 +8,14 @@ function ColorList() {
     "darkslategray",
     "hotpink",
   ];
+// Adding a key prop to each of the colors
+  const colorElements = colors.map((color) => {
+    return(
+      <li key={color} style={{color: color}}>
+        {color}
+      </li>
+    );
+  });
 
   return (
     <div>
@@ -24,3 +32,4 @@ function ColorList() {
 }
 
 export default ColorList;
+  
